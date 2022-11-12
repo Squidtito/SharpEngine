@@ -15,7 +15,9 @@ public partial class XmlConverter : Node2D
 		XMLParser xml = new XMLParser();
 		xml.Open(CHAR_XML);
 		while (xml.Read() == Error.Ok);
-			GD.Print(xml.GetNodeName()+"-");
+			string node_name = xml.GetNodeName();
+			GD.Print(node_name);
+			GD.Print(xml.GetNamedAttributeValue("name")+"-");
 			
 		GD.Print(xml.Read());
 		GD.Print(xml.GetNamedAttributeValue("frameWidth")+ "yes");

@@ -13,4 +13,3 @@ texture = SubResource("ImageTexture_v1ig7")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(570, 318)
-current = true
