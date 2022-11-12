@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2buirkrldw1v"]
+
+[ext_resource type="Script" path="res://Scenes/Xml Converter/XmlConverter.cs" id="1_nhtd8"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_v1ig7"]
+
+[node name="scene" type="Node2D"]
+script = ExtResource("1_nhtd8")
+
+[node name="Texture" type="Sprite2D" parent="."]
+position = Vector2(517, 299)
+texture = SubResource("ImageTexture_v1ig7")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(570, 318)
+current = true

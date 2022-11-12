@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Sharp Engine"
-run/main_scene="res://Scenes/Main Menu/Main Menu.tscn"
+run/main_scene="res://Scenes/Xml Conveter.tscn"
 config/features=PackedStringArray("4.0", "C#", "Forward Plus")
 config/icon="res://Scenes/Main Menu/icon.svg"
+
+[autoload]
+
+Path="*res://AutoLoad/Path.cs"
 
 [display]
 
